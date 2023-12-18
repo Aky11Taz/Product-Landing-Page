@@ -19,7 +19,7 @@ This is a solution to the [Certification Project - Product Landing Page](https:/
 
 ### Links
 
-- Live Site URL: [Emrys Creations - Product Landing Page](https://your-live-site-url.com)
+- Live Site URL: [Emrys Creations - Product Landing Page](https://aky11taz.github.io/Product-Landing-Page/)
 
 ## My process
 
