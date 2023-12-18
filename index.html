@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="128x128"
+      href="Images/Logo_No_EC.svg"
+    />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="Images/Logo.svg" alt="Emrys Creations Logo" id="header-img" />
+      <nav id="nav-bar">
+        <a href="#our-qualities" class="nav-link">Our Qualities</a>
+        <a href="#video" class="nav-link">Animations</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <section role="form">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <fieldset>
+            <legend>Your Freelance Graphic Design Wizard!</legend>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <input type="submit" id="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="our-qualities">
+        <div class="qualities-wrap">
+          <img src="Images/Passion_Infused_Designs.svg" alt="Passion heart" />
+          <div class="description">
+            <h2 class="qualities">Passion-Infused Designs</h2>
+            <p>Each creation is crafted with love and a touch of magic.</p>
+          </div>
+        </div>
+        <div class="qualities-wrap">
+          <img src="Images/Affordable_Magic.svg" alt="Magic portion" />
+          <div class="description">
+            <h2 class="qualities">Affordable Magic</h2>
+            <p>Quality designs without breaking the bank!</p>
+          </div>
+        </div>
+        <div class="qualities-wrap">
+          <img src="Images/Timely_Delivery.svg" alt="Passion heart" />
+          <div class="description">
+            <h2 class="qualities">Timely Delivery</h2>
+            <p>I believe in your deadlines as much as you do.</p>
+          </div>
+        </div>
+        <div class="qualities-wrap">
+          <img src="Images/Collaborative_Creativity.svg" alt="Passion heart" />
+          <div class="description">
+            <h2 class="qualities">Collaborative Creativity</h2>
+            <p>Your ideas meet my expertise for design perfection.</p>
+          </div>
+        </div>
+        <div class="qualities-wrap">
+          <img src="Images/Versatility.svg" alt="Passion heart" />
+          <div class="description">
+            <h2 class="qualities">Versatility</h2>
+            <p>
+              From personal projects to corporate branding, I've got the skills!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <video id="video" controls>
+        <source src="Videos/Welcome!.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <section id="pricing-sec">
+        <div id="pricing">
+          <div class="product">
+            <h3 class="product-name">Animations</h3>
+            <p class="price">MK50,000</p>
+            <p class="product-desc">Animated adverts and Logo Animations.</p>
+            <button class="select" onclick="sendEmail1()">Select</button>
+          </div>
+          <div class="product">
+            <h3 class="product-name">T-Shirt Designs</h3>
+            <p class="price">MK5,000</p>
+            <p class="product-desc">
+              Wear your uniqueness! Just as you are unique.
+            </p>
+            <button class="select" onclick="sendEmail2()">Select</button>
+          </div>
+          <div class="product">
+            <h3 class="product-name">Logo Design</h3>
+            <p class="price">MK40,000</p>
+            <p class="product-desc">Original, memorable, and uniquely yours!</p>
+            <button class="select" onclick="sendEmail3()">Select</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>You are not dreaming, it's real.</p>
+      <p>
+        Copyright 2023,
+        <a href="https://web.facebook.com/Official.EmrysCreations"
+          >Emrys Creations</a
+        >.
+      </p>
+    </footer>
+    <script>
+      function sendEmail1() {
+        var recipientEmail = "gabrielphirih@gmail.com";
+        var subject = "Animations";
+        var body =
+          "Hello Emrys creations, would you please animate my project?";
+        var mailtoLink =
+          "mailto:" +
+          recipientEmail +
+          "?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+
+      function sendEmail2() {
+        var recipientEmail = "gabrielphirih@gmail.com";
+        var subject = "T-Shirt Designs";
+        var body =
+          "Hello Emrys creations, help me wear my uniqueness. I want a T-Shirt design";
+        var mailtoLink =
+          "mailto:" +
+          recipientEmail +
+          "?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+
+      function sendEmail3() {
+        var recipientEmail = "gabrielphirih@gmail.com";
+        var subject = "Logo Design";
+        var body =
+          "Hello Emrys creations, would you please create an original, memorable and unique logo for me?";
+        var mailtoLink =
+          "mailto:" +
+          recipientEmail +
+          "?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+    </script>
+  </body>
+</html>
