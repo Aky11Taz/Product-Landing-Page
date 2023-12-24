@@ -101,6 +101,10 @@ input {
   background-color: hsl(33, 93%, 44%);
 }
 
+#our-qualities {
+  padding-top: 5rem;
+}
+
 .qualities-wrap {
   display: flex;
   flex-direction: row;
